@@ -5,13 +5,15 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Ajout du CDN Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <title>Stéphane Chimy</title>
   </head>
 
   <body>
         <div id="container">
 
-            <div id="column__gauche">
+            <div id="columnGauche">
 
                 <section class="portrait">
 
@@ -20,19 +22,33 @@
                 </section>
 
                 <section class="contact">
-                    <h3>Contact</h3>
-                    <ul>
-                        <li>Adresse:</li>
-                        <li>Téléphone</li>
-                        <li>Email</li>
-                        <li>Github</li>
-                    </ul>
+                    <h3 class="columnGauch__section--titre">Contact</h3>
+                    <p class="columnGauch__section--corps">
+                        <ul>
+                            <p>
+                                <li>Adresse: <br> 20 rue Marmontel <br> Paris 75015</li>
+                            </p>
+
+                            <p>
+                                <li>Téléphone: <br> <a href="tel:+">06 62 06 53 03</a></li>
+                            </p>
+
+                            <p>
+                                <li>Email: <br> <a href="mailto:stephane.chimy@gmail.com">stephane.chimy@gmail.com</a></li>
+                            </p>
+
+                            <p>
+                                <li>Github: <br> <a href="https://github.com/StephaneChimy/">Github repository</a></li>
+                            </p>
+
+                        </ul>
+                    </p>
 
                 </section>
 
-                <section>
-                    <h3>A propos de moi</h3>
-                    <p>
+                <section class="apropos">
+                    <h3 class="columnGauch__section--titre">A propos de moi</h3>
+                    <p class="columnGauch__section--corps">
                         Fort d' une experience réussie dans la restauration, il est temps de voguer vers de nouveaux
                         horizons. Après avoir été responsable de restaurant, j'ai voulu allier mes compétences au monde de la food.
                         Celà m'a permis d'intégrer Gocater (leader dans son domaine en B2C) et intégrer une équipe de service opérationnel 
@@ -43,13 +59,13 @@
 
                 </section>
 
-                <section>
-                    <h3>Loisirs</h3>
+                <section class="loisirs">
+                    <h3 class="columnGauch__section--titre">Loisirs</h3>
                 </section>
 
             </div>
 
-            <div id="column__droite">
+            <div id="columnDroite">
 
                     <section class="titre">
 
@@ -69,7 +85,7 @@
                         <div class="formation__corps">
                             <div class="formation__date">
                                 <ul>
-                                    <li>2019 <br> Paris</li>
+                                    <li>2020 <br> Paris</li>
                                     
                                 </ul>
 
@@ -77,8 +93,59 @@
 
                             <div class="formation__description">
                                 <h3>Openclassrooms</h3>
-                                <p>test</p>
-                                <p>test</p>
+                                <p>Developpeur Web</p>
+                                <p>Formation d'une durée de 6mois.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <div class="formation__corps">
+                            <div class="formation__date">
+                                <ul>
+                                    <li>Nov 2012 - Dec 2012 <br> Londres</li>
+                                    
+                                </ul>
+
+                            </div>
+
+                            <div class="formation__description">
+                                <h3>European Bartender School</h3>
+                                <p>Formation bartender</p>
+
+                            </div>
+                        </div>
+
+                        <div class="formation__corps">
+                            <div class="formation__date">
+                                <ul>
+                                    <li>2007 - 2009 <br>Paris</li>
+                                    
+                                </ul>
+
+                            </div>
+
+                            <div class="formation__description">
+                                <h3>BTS IG (Informatique de Gestion)</h3>
+                                <p>IMC Group Vedior France</p>
+                                <p>Formation en alternance</p>
+
+                            </div>
+                        </div>
+
+                        <div class="formation__corps">
+                            <div class="formation__date">
+                                <ul>
+                                    <li>2005 - 2007 <br>Paris</li>
+                                    
+                                </ul>
+
+                            </div>
+
+                            <div class="formation__description">
+                                <h3>Bac Pro MRIM (micro-informatique Réseaux Installation Maintenance)</h3>
+                                <p>IMC Group Vedior France</p>
+                                <p>Formation en alternance</p>
 
                             </div>
                         </div>
@@ -98,7 +165,7 @@
                             <div class="experiencePro__date">
 
                                 <ul>
-                                    <li>2018 <br>Paris</li>
+                                    <li>Nov 2019 - Mai 2020 <br>Paris</li>
                                 </ul>
 
                             </div>
@@ -106,8 +173,112 @@
                             <div class="experiencePro__description">
 
                                 <h3>Gocater</h3>
-                                <p>test</p>
-                                <p>test</p>
+                                <p>Service Opérationnel Client</p>
+                                <p>
+                                    <ul>
+                                        <li>Garantir une satisfaction client proche de la perfection</li>
+                                        <li>Gestion d'environs 400 commandes / jours</li>
+                                        <li>Spécialisation dans la demande de devis sur-mesure</li>
+                                        <li>Recherche constante d'amélioration des process</li>
+                                    </ul>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="experiencePro__corps">
+
+                            <div class="experiencePro__date">
+
+                                <ul>
+                                    <li>Dec 2018 - Nov 2019<br>Paris</li>
+                                </ul>
+
+                            </div>
+
+                            <div class="experiencePro__description">
+
+                                <h3>Le Cellier</h3>
+                                <p>Responsable</p>
+                                <p>
+                                    <ul>
+                                        <li>Organisation d'évènements</li>
+                                        <li>Recrutement / Management d'équipe</li>
+                                        <li>Notions d'oenologie</li>
+                                    </ul>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="experiencePro__corps">
+
+                            <div class="experiencePro__date">
+
+                                <ul>
+                                    <li>Nov 2014 - Dec 2018 <br>Paris</li>
+                                </ul>
+
+                            </div>
+
+                            <div class="experiencePro__description">
+
+                                <h3>King George</h3>
+                                <p>Manager</p>
+                                <p>
+                                    <ul>
+                                        <li>Formation & management du personnel de bar / salle</li>
+                                        <li>Création de la carte des Cocktails et Spiritueux</li>
+                                        <li>Gestion des commandes / stocks / plannings / réservations</li>
+                                    </ul>
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="experiencePro__corps">
+
+                            <div class="experiencePro__date">
+
+                                <ul>
+                                    <li>2010 - 2011 <br>Australie</li>
+                                </ul>
+
+                            </div>
+
+                            <div class="experiencePro__description">
+
+                                <h3>Voyage en Australie</h3>
+                                <p>Barman</p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="experiencePro__corps">
+
+                            <div class="experiencePro__date">
+
+                                <ul>
+                                    <li>Janvier 2017 - Juin 2009 <br>Paris</li>
+                                </ul>
+
+                            </div>
+
+                            <div class="experiencePro__description">
+
+                                <h3>Oodrive</h3>
+                                <p>Technicien Systèmes et réseaux</p>
+                                <p>
+                                    <ul>
+                                        <li>Installation de serveurs chez le client</li>
+                                        <li>Administration de serveur</li>
+                                        <li>Monitoring de serveur (Nagios)</li>
+                                    </ul>
+                                </p>
 
                             </div>
 
@@ -127,10 +298,10 @@
 
                             <div class="recommandation__card">
 
-                                <h5>Nom de la personne</h5>
+                                <h5>Christophe Gormand</h5>
 
                                 <ul>
-                                    <li>Post</li>
+                                    <li>Manager Service Opérationnel chez Gocater</li>
                                     <li>Téléphone</li>
                                     <li>email</li>
                                 </ul>
@@ -139,10 +310,10 @@
 
                             <div class="recommandation__card">
 
-                                <h5>Nom de la personne</h5>
+                                <h5>David Pléau</h5>
 
                                 <ul>
-                                    <li>Post</li>
+                                    <li>Gérant du King George</li>
                                     <li>Téléphone</li>
                                     <li>email</li>
                                 </ul>
