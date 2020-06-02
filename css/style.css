@@ -1,0 +1,43 @@
+#container{
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    border: solid 1px black;
+    margin: auto;
+}
+
+#column__gauche{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: solid 1px green;
+    
+}
+.portrait__photo{
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+#column__droite{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    border: solid 1px green;
+}
+
+.formation__container, .experiencePro__container{
+    display: flex;
+    flex-direction: column;
+    border: orange solid 1px;
+}
+.formation__corps, .experiencePro__corps, .recommandation__corps{
+    display: flex;
+}
+.formation__date, .experiencePro__date, .recommandation__card{
+    border: orangered solid 1px;
+    flex:1;
+}
+.formation__description, .experiencePro__description{
+    border: pink solid 1px;
+    flex:2;
+}
