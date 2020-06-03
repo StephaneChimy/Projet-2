@@ -64,7 +64,8 @@
     padding-right:5%;
 }
 .formation__date ul, .experiencePro__date ul{
-    padding-left: 18px;  
+    margin-left: 20px;
+    
 }
 
 /* Couleur des textes */
@@ -87,6 +88,9 @@
 }
 .recommandations__container i, .experiencePro__container i, .formation__container i{
     color: #B0BEC5;
+}
+.fa-circle{
+    font-size: 6px;
 }
 
 /* Mise en page des titre */
