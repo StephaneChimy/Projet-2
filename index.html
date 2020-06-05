@@ -19,17 +19,17 @@
   </head>
 
   <body>
-        <div id="container">
+        <div id="pageContainer">
 
             <div id="columnGauche">
 
-                <section class="portrait">
+                <section class="columnGauche__section--portrait">
 
-                    <img class="portrait__photo" src="images/portrait.jpg" alt="Photo de stéphane chimy">
+                    <img id="portrait" src="images/portrait.jpg" alt="Photo de stéphane chimy">
 
                 </section>
 
-                <section class="contact">
+                <section id="contact">
                     <h2 class="columnGauche__section--titre">Contact</h2>
                     <p class="columnGauche__section--corps">
                         <ul>
@@ -54,7 +54,7 @@
 
                 </section>
 
-                <section class="apropos">
+                <section id="apropos">
                     <h2 class="columnGauche__section--titre">à propos de moi</h2>
                     <p class="columnGauche__section--corps">
                         Fort d' une experience réussie dans la restauration, il est temps de voguer vers de nouveaux
@@ -67,7 +67,7 @@
 
                 </section>
 
-                <section class="loisirs">
+                <section id="loisirs">
                     <h2 class="columnGauche__section--titre">Loisirs</h2>
                     <p class="columnGauche__section--corps">
                         
@@ -80,23 +80,23 @@
 
             <div id="columnDroite">
 
-                    <section class="titre">
+                    <section class="columnDroite__titre">
 
-                        <h1><span class="columnDroite--prenom">Stéphane</span> <span class="columnDroite--nom"> Chimy</span></h1>
-                        <h2 class="columnDroite--description"><span><u>Dével</u>oppeur web freelance</span></h2>
+                        <h1><span class="columnDroite__titre--prenom">Stéphane</span><span class="columnDroite__titre--nom"> Chimy</span></h1>
+                        <h2 class="columnDroite__titre--description"><span><u>Dével</u>oppeur web freelance</span></h2>
 
                     </section>
 
-                    <section class="formation__container">
+                    <section id="formation" class="columnDroite__container">
 
-                        <div class="formation__header">
+                        <div class="columnDroite__bloc--header">
 
                             <h2><i class="fas fa-graduation-cap"></i> Formation</h2>
 
                         </div>
 
-                        <div class="formation__corps">
-                            <div class="formation__date">
+                        <div class="columnDroite__bloc--corps">
+                            <div class="columnDroite__bloc--date">
                                 <ul class="fa-ul">
                                     <li><span class="fa-li"><i class="far fa-dot-circle"></i></span>2020 <br> Paris</li>
                                     
@@ -104,7 +104,7 @@
 
                             </div>
 
-                            <div class="formation__description">
+                            <div class="columnDroite__bloc--description">
                                 <h3>Openclassrooms</h3>
                                 <p>Developpeur Web</p>
                                 <p>
@@ -114,8 +114,8 @@
                             </div>
                         </div>
 
-                        <div class="formation__corps">
-                            <div class="formation__date">
+                        <div class="columnDroite__bloc--corps">
+                            <div class="columnDroite__bloc--date">
                                 <ul class="fa-ul">
                                     <li><span class="fa-li"><i class="fas fa-circle"></i></span>Nov 2012 - Dec 2012 <br> Londres</li>
                                     
@@ -123,7 +123,7 @@
 
                             </div>
 
-                            <div class="formation__description">
+                            <div class="columnDroite__bloc--description">
                                 <h3>European Bartender School</h3>
                                 <p>Formation bartender</p>
                                 <p>
@@ -133,8 +133,8 @@
                             </div>
                         </div>
 
-                        <div class="formation__corps">
-                            <div class="formation__date">
+                        <div class="columnDroite__bloc--corps">
+                            <div class="columnDroite__bloc--date">
                                 <ul class="fa-ul">
                                     <li><span class="fa-li"><i class="fas fa-circle"></i></span>2007 - 2009 <br>Paris</li>
                                     
@@ -142,7 +142,7 @@
 
                             </div>
 
-                            <div class="formation__description">
+                            <div class="columnDroite__bloc--description">
                                 <h3>BTS IG <span>(Informatique de Gestion)</span></h3>
                                 <p>IMC Group Vedior France</p>
                                 <p>Formation en alternance</p>
@@ -150,8 +150,8 @@
                             </div>
                         </div>
 
-                        <div class="formation__corps">
-                            <div class="formation__date">
+                        <div class="columnDroite__bloc--corps">
+                            <div class="columnDroite__bloc--date">
                                 <ul class="fa-ul">
                                     <li><span class="fa-li"><i class="fas fa-circle"></i></span>2005 - 2007 <br>Paris</li>
                                     
@@ -159,7 +159,7 @@
 
                             </div>
 
-                            <div class="formation__description">
+                            <div class="columnDroite__bloc--description">
                                 <h3>Bac Pro MRIM <span>(Micro-informatique Réseaux Installation Maintenance)</span></h3>
                                 <p>IMC Group Vedior France</p>
                                 <p>Formation en alternance</p>
@@ -169,17 +169,17 @@
 
                     </section>
 
-                    <section class="experiencePro__container">
+                    <section id="experiencePro" class="columnDroite__container">
 
-                        <div class="experiencePro__header">
+                        <div class="columnDroite__bloc--header">
 
                             <h2><i class="fas fa-briefcase"></i> Expérience Professionnelle</h2>
 
                         </div>
 
-                        <div class="experiencePro__corps">
+                        <div class="columnDroite__bloc--corps">
 
-                            <div class="experiencePro__date">
+                            <div class="columnDroite__bloc--date">
 
                                 <ul class="fa-ul">
                                     <li><span class="fa-li"><i class="far fa-dot-circle"></i></span>Nov 2019 - Mai 2020 <br>Paris</li>
@@ -187,7 +187,7 @@
 
                             </div>
 
-                            <div class="experiencePro__description">
+                            <div class="columnDroite__bloc--description">
 
                                 <h3>Gocater</h3>
                                 <p>Service Opérationnel Client</p>
@@ -204,9 +204,9 @@
 
                         </div>
 
-                        <div class="experiencePro__corps">
+                        <div class="columnDroite__bloc--corps">
 
-                            <div class="experiencePro__date">
+                            <div class="columnDroite__bloc--date">
 
                                 <ul class="fa-ul">
                                     <li><span class="fa-li"><i class="fas fa-circle"></i></span>Dec 2018 - Nov 2019<br>Paris</li>
@@ -214,7 +214,7 @@
 
                             </div>
 
-                            <div class="experiencePro__description">
+                            <div class="columnDroite__bloc--description">
 
                                 <h3>Le Cellier</h3>
                                 <p>Responsable</p>
@@ -230,9 +230,9 @@
 
                         </div>
 
-                        <div class="experiencePro__corps">
+                        <div class="columnDroite__bloc--corps">
 
-                            <div class="experiencePro__date">
+                            <div class="columnDroite__bloc--date">
 
                                 <ul class="fa-ul">
                                     <li><span class="fa-li"><i class="fas fa-circle"></i></span>Nov 2014 - Dec 2018 <br>Paris</li>
@@ -240,7 +240,7 @@
 
                             </div>
 
-                            <div class="experiencePro__description">
+                            <div class="columnDroite__bloc--description">
 
                                 <h3>King George</h3>
                                 <p>Manager</p>
@@ -256,9 +256,9 @@
 
                         </div>
 
-                        <div class="experiencePro__corps">
+                        <div class="columnDroite__bloc--corps">
 
-                            <div class="experiencePro__date">
+                            <div class="columnDroite__bloc--date">
 
                                 <ul class="fa-ul">
                                     <li><span class="fa-li"><i class="fas fa-circle"></i></span>2010 - 2011 <br>Australie</li>
@@ -266,7 +266,7 @@
 
                             </div>
 
-                            <div class="experiencePro__description">
+                            <div class="columnDroite__bloc--description">
 
                                 <h3>Voyage en Australie</h3>
                                 <p>Barman</p>
@@ -275,9 +275,9 @@
 
                         </div>
 
-                        <div class="experiencePro__corps">
+                        <div class="columnDroite__bloc--corps">
 
-                            <div class="experiencePro__date">
+                            <div class="columnDroite__bloc--date">
 
                                 <ul class="fa-ul">
                                     <li><span class="fa-li"><i class="fas fa-circle"></i></span>Janvier 2017 - Juin 2009 <br>Paris</li>
@@ -285,7 +285,7 @@
 
                             </div>
 
-                            <div class="experiencePro__description">
+                            <div class="columnDroite__bloc--description">
 
                                 <h3>Oodrive</h3>
                                 <p>Technicien Systèmes et réseaux</p>
@@ -303,17 +303,17 @@
 
                     </section>
 
-                    <section class="recommandations__container">
+                    <section id="recommandations" class="columnDroite__container">
 
-                        <div class="recommandation__header">
+                        <div class="columnDroite__bloc--header">
 
                             <h2><i class="fas fa-pencil-alt"></i> Recommandations</h2>
 
                         </div>
 
-                        <div class="recommandation__corps">
+                        <div class="columnDroite__bloc--corps">
 
-                            <div class="recommandation__card">
+                            <div class="columnDroite__bloc--card">
 
                                 <h3>Christophe Gormand</h3>
 
@@ -328,7 +328,7 @@
 
                             </div>
 
-                            <div class="recommandation__card">
+                            <div class="columnDroite__bloc--card">
 
                                 <h3>David Pléau</h3>
 

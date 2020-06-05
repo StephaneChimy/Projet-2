@@ -1,145 +1,148 @@
-#container{
+/* Container de la page */
+#pageContainer{
     max-width: 1200px;
-    display: flex;
-    justify-content: center;
     border: solid 1px rgba(0, 0, 0, 0.5);
+}
+
+/** Structure de la page **/
+
+/* Les flexbox */
+#pageContainer, #columnGauche, #columnDroite, .columnDroite__container, .columnDroite__bloc--corps{
+    display: flex;
+}
+
+/* Direction des flexbox en colonne */
+#columnGauche, #columnDroite, .columnDroite__container{
+    flex-direction: column;
+}
+
+/* Taille des flexbox */
+#columnGauche, .columnDroite__bloc--date, .columnDroite__bloc--card{
+    flex: 1;
+}
+#columnDroite, .columnDroite__bloc--description, #apropos{
+    flex: 2;
+}
+
+/** Alignements **/
+
+/* Centrer le bloc */
+#pageContainer, .columnGauche__section--portrait{
     margin: auto;
+}
+/* Aligner le texte au centre */
+.columnGauche__section--titre, #loisirs{
+    text-align: center; 
+}
+
+/* Font */
+body{
     font-family: 'Work Sans', sans-serif, Arial;
 }
 
+/* Couleurs des fonts / icons */
+
+.columnGauche__section--titre, .columnDroite__titre--prenom, .columnDroite__container i {
+    color: #B0BEC5;
+}
+#loisirs p, .columnDroite__titre--description, .columnDroite__bloc--corps{
+    color: #37474F;
+}
+
+/* Couleurs des background */
 #columnGauche{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
     background-color: #B0BEC5;   
 }
-.portrait{  
-    margin: auto;
+
+/* Couleur du soulignement du titre */
+.columnDroite__titre--description u{
+    text-decoration-color: #B0BEC5;
+    text-underline-position: under;
+}
+
+/* Couleur des border de titre */
+.columnDroite__bloc--header{
+    border-bottom: solid 1px #B0BEC5;
+}
+
+/* Mise en page */
+.columnGauche__section--portrait{  
     padding-top: 70px;
     padding-bottom: 30px;
-}
-.portrait__photo{
-    max-width: 200px;
-    border-radius: 50%;
-    border: solid 4px rgba(0, 0, 0, 0.5);
-}
-.columnGauche__section--titre{
-    text-align: center;
-    background-color: #37474F;
-    color: #B0BEC5;
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
 .columnGauche__section--corps{
     padding-left: 10%;
     padding-right:10%;
 }
-
-.columnGauche__section--corps + ul, .recommandation__corps ul{
-    list-style-type: none;
-}
-#columnGauche section{
-    border: solid red 3px;
-}
-.loisirs{
-    text-align: center;
-}
-.loisirs p{
-    color: #37474F;
-}
-.loisirs i{
+#loisirs i{
     margin-left: 10px;
     margin-right: 10px;
 }
-.apropos{
-    flex:2;
-    text-align: justify;
-}
-
 #columnDroite{
-    display: flex;
-    flex-direction: column;
-    flex: 2;
     padding-left: 5%;
     padding-right:5%;
 }
-.formation__date ul, .experiencePro__date ul{
-    margin-left: 20px;
-    
-}
-
-/* Couleur des textes */
-
-.columnDroite--prenom{
-    color: #B0BEC5;
-    font-weight: normal;
-}
-.columnDroite--description, .formation__corps , .experiencePro__corps, .recommandation__corps{
-    color: #37474F;
-}
-
-/* Couleur */
-.columnDroite--description u{
-    text-decoration-color: #B0BEC5;
-    text-underline-position: under;
-}
-.formation__header, .experiencePro__header, .recommandation__header{
-    border-bottom: solid 1px #B0BEC5;
-}
-.recommandations__container i, .experiencePro__container i, .formation__container i{
-    color: #B0BEC5;
-}
-.fa-circle{
-    font-size: 6px;
-}
-
-/* Mise en page des titre */
-.titre{
+.columnDroite__titre{
     margin-top: 50px;
     margin-bottom: 50px;
-}
-.titre h1{
-    font-size: 60px;
-    margin-bottom: 10px; 
-    letter-spacing: -2px; 
-}
-.titre, .titre h1, h2, h3, h4, .columnGauche__section--titre, .formation__header, .experiencePro__header, .recommandation__header{
-    font-weight: 500; 
-}
-
-.titre, .titre h1, h2, h3, .columnGauche__section--titre, .formation__header, .experiencePro__header, .recommandation__header{
-    text-transform: uppercase;
-}
-h3 span, h2 span{
-    text-transform: none;
-    font-weight: normal;
 }
 h3{
     margin-bottom: -10px;
 }
-.columnDroite--nom, h3 span, h2 span{
+.columnDroite__bloc--date ul{
+    margin-left: 20px;  
+}
+.columnDroite__bloc--card{
+    margin-bottom: 30px;
+}
+.columnDroite__bloc--card ul{
+    padding-left: 0;
+}
+
+/* Mise en page des fonts / icons */
+
+.columnDroite__titre--prenom{
+    font-weight: normal;
+}
+.fa-circle{
+    font-size: 6px;
+}
+h1{
+    font-size: 60px;
+    margin-bottom: 10px; 
+    letter-spacing: -2px;
+}
+h1, h2, h3{
+    font-weight: 500; 
+    text-transform: uppercase;
+}
+h3 span, h2 span{
+    text-transform: none;
+}
+.columnDroite__titre--nom, h3 span, h2 span{
     font-weight:200;
 }
 
-.formation__container, .experiencePro__container{
-    display: flex;
-    flex-direction: column;
-    
+/* Mise en page de la photo */
+#portrait{
+    max-width: 200px;
+    border-radius: 50%;
+    border: solid 4px rgba(0, 0, 0, 0.5);
 }
-.formation__corps, .experiencePro__corps, .recommandation__corps{
-    display: flex;
+
+/* Mise en page des titres de la colonne gauche */
+.columnGauche__section--titre{
+    background-color: #37474F;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
-.recommandation__corps ul{
-    padding-left: 0;
+
+/* Enlever les puces des listes */
+.columnGauche__section--corps + ul, .columnDroite__bloc--card ul{
+    list-style-type: none;
 }
-.recommandation__corps{
-    margin-bottom: 30px;
-}
-.formation__date, .experiencePro__date, .recommandation__card{
-    
-    flex:1;
-}
-.formation__description, .experiencePro__description{
-    
-    flex:2;
+
+/* Le texte s'étire pour prendre toute la place dans la colonne */
+#apropos{
+    text-align: justify;
 }
