@@ -9,12 +9,12 @@
 /** Structure de la page **/
 
 /* Les flexbox */
-#pageContainer, #columnGauche, #columnDroite, .columnDroite__container, .columnDroite__bloc--corps, .mediaQuerrie__portrait, .mediaQuerrie__apropos{
+#pageContainer, #columnGauche, #columnDroite, .columnDroite__container, .columnDroite__bloc--corps, .mediaQuerie__portrait, .mediaQuerie__apropos{
     display: flex;
 }
 
 /* Direction des flexbox en colonne */
-#columnGauche, #columnDroite, .columnDroite__container, .mediaQuerrie__portrait, .mediaQuerrie__apropos{
+#columnGauche, #columnDroite, .columnDroite__container, .mediaQuerie__portrait, .mediaQuerie__apropos{
     flex-direction: column;
 }
 
@@ -22,13 +22,18 @@
 #columnGauche, .columnDroite__bloc--date, .columnDroite__bloc--card{
     flex: 1;
 }
-#columnDroite, .columnDroite__bloc--description, .mediaQuerrie__apropos{
+#columnDroite, .columnDroite__bloc--description, .mediaQuerie__apropos{
     flex: 2;
 }
 
 /* Espacement de Flexbox */
-.mediaQuerrie__apropos{
+.mediaQuerie__apropos{
     justify-content: space-between;
+}
+
+/* Cacher le titre général contact (affichage dans la media querie */
+.mediaQuerie__portrait__titre > h2{
+    display: none;
 }
 
 /** Alignements **/
@@ -160,30 +165,51 @@ h3 span, h2 span{
     text-align: justify;
 }
 
- @media (min-width: 480px) and (max-width: 900px){
+/** Media Queries **/
+ @media (min-width: 500px) and (max-width: 900px){
 
-    #pageContainer{
+    /** Column Gauche **/
+
+    /* Afficher le titre général contact */
+    .mediaQuerie__portrait__titre h2{
+        display: block;
+        margin-bottom: 0;
+    }
+
+    /* Cacher le titre de la div contact */
+    #contact .columnGauche__section--titre{
+        display: none;
+    }
+    #pageContainer, .columnGauche__section--portrait{
         flex-direction: column;
     }
-    .mediaQuerrie__portrait, .mediaQuerrie__apropos, .columnGauche__section--portrait{
+    .mediaQuerie__portrait, .mediaQuerie__apropos, .columnGauche__section--portrait{
        display: flex;
     }
-    .mediaQuerrie__portrait, .mediaQuerrie__apropos{
+    .mediaQuerie__portrait, .mediaQuerie__apropos{
         flex-direction: row;
     }
-    .columnGauche__section--portrait, #loisirs{
+    .columnGauche__section--portrait, #loisirs, #contact{
         flex: 1;   
     }
-    #contact, #apropos{
+    #apropos{
         flex: 2;
     }
-    #contact{
-        text-align: center;
-    }
-    #contact, #loisirs, .columnGauche__section--portrait, #apropos{
+    #loisirs, #apropos{
         border: solid 1px #37474F;
     }
     .columnGauche__section--portrait{
-        justify-content: center;
+        padding: 0;
+        margin:0;
+    }
+    .columnGauche__section--titre{
+        margin-top: 0;
+    }
+    #portrait{
+        margin: auto;
+    }
+    /** Column Droite **/
+    .columnDroite__titre{
+        text-align: center;
     }
 }
