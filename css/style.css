@@ -150,6 +150,11 @@ h3 span, h2 span{
     list-style-type: none;
 }
 
+/* Espacement entre les li de contact */
+
+.columnGauche__section--corps li{
+    margin-bottom: 15px;
+}
 /* Le texte s'étire pour prendre toute la place dans la colonne */
 #apropos{
     text-align: justify;
