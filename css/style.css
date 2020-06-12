@@ -62,6 +62,15 @@ body{
     color: #37474F;
 }
 
+/* Couleur des links et soulignement au passage de la souris */
+a:link{
+    color: #0D47A1;
+    text-decoration: none;
+}
+a:hover{
+    border-bottom: solid 1px #0D47A1;
+}
+
 /* Couleurs des background */
 #columnGauche{
     background-color: #B0BEC5;   
