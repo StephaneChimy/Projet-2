@@ -9,12 +9,12 @@
 /** Structure de la page **/
 
 /* Les flexbox */
-#pageContainer, #columnGauche, #columnDroite, .columnDroite__container, .columnDroite__bloc--corps, .mediaQuerie__portrait, .mediaQuerie__apropos{
+#pageContainer, #columnGauche, #columnDroite, .columnDroite__container, .columnDroite__bloc--corps, .mediaQuerie__portrait, .mediaQuerie__apropos,.columnGauche__section--portrait{
     display: flex;
 }
 
 /* Direction des flexbox en colonne */
-#columnGauche, #columnDroite, .columnDroite__container, .mediaQuerie__portrait, .mediaQuerie__apropos{
+#columnGauche, #columnDroite, .columnDroite__container, .mediaQuerie__portrait, .mediaQuerie__apropos, .columnGauche__section--portrait{
     flex-direction: column;
 }
 
@@ -39,7 +39,7 @@
 /** Alignements **/
 
 /* Centrer le bloc */
-#pageContainer, .columnGauche__section--portrait{
+#pageContainer{
     margin: auto;
 }
 
@@ -177,6 +177,27 @@ h3 span, h2 span{
 #apropos{
     text-align: justify;
 }
+/** Ajout d'un effet de fondu sur le portrait **/
+.columnGauche__section--portrait{
+    align-items: center;
+    height: 200px;
+}
+.columnGauche__section--portrait img{
+    position: absolute;
+}
+#portrait{
+    z-index: 2;
+    transition: opacity 1s ease-in-out;
+}
+#portrait:hover{
+    opacity: 0;
+}
+#cssvalidator{
+    z-index: 1;
+    top: 160px;
+}
+
+
 
 /** Media Queries **/
  @media (min-width: 500px) and (max-width: 900px){
@@ -197,7 +218,7 @@ h3 span, h2 span{
         flex-direction: column;
     }
     .mediaQuerie__portrait, .mediaQuerie__apropos, .columnGauche__section--portrait{
-       display: flex;
+        display: flex;
     }
     .mediaQuerie__portrait, .mediaQuerie__apropos{
         flex-direction: row;
@@ -218,9 +239,13 @@ h3 span, h2 span{
     .columnGauche__section--titre{
         margin-top: 0;
     }
-    #portrait{
-        margin: auto;
+    .columnGauche__section--portrait img{
+        margin-top: 20px;
     }
+    #cssvalidator{
+        top:130px
+    }
+
     /** Column Droite **/
     .columnDroite__titre{
         text-align: center;
