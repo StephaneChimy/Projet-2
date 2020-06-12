@@ -66,6 +66,10 @@ body{
 a:link{
     color: #0D47A1;
     text-decoration: none;
+    /* Transition légère pour souligner le text */
+    border-bottom: solid 1px transparent;
+    transition-duration: 0.5s;
+    transition-property: border-bottom;
 }
 a:hover{
     border-bottom: solid 1px #0D47A1;
