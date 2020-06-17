@@ -44,7 +44,7 @@
 }
 
 /* Aligner le texte au centre */
-.columnGauche__section--titre, #loisirs{
+.columnGauche__section--titre, #loisirs, #langues{
     text-align: center; 
 }
 
