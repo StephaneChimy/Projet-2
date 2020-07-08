@@ -1,253 +1,294 @@
 /* Container de la page */
-#pageContainer{
-    max-width: 1200px;
-    min-width: 340px;
-    border: solid 1px rgba(0, 0, 0, 0.5);
-    flex-wrap: wrap;
+#pageContainer {
+  max-width: 1200px;
+  min-width: 340px;
+  border: solid 1px rgba(0, 0, 0, 0.5);
+  flex-wrap: wrap;
 }
 
 /** Structure de la page **/
 
 /* Les flexbox */
-#pageContainer, #columnGauche, #columnDroite, .columnDroite__container, .columnDroite__bloc--corps, .mediaQuerie__portrait, .mediaQuerie__apropos,.columnGauche__section--portrait{
-    display: flex;
+#pageContainer,
+#columnGauche,
+#columnDroite,
+.columnDroite__container,
+.columnDroite__bloc--corps,
+.mediaQuerie__portrait,
+.mediaQuerie__apropos,
+.columnGauche__section--portrait {
+  display: flex;
 }
 
 /* Direction des flexbox en colonne */
-#columnGauche, #columnDroite, .columnDroite__container, .mediaQuerie__portrait, .mediaQuerie__apropos, .columnGauche__section--portrait{
-    flex-direction: column;
+#columnGauche,
+#columnDroite,
+.columnDroite__container,
+.mediaQuerie__portrait,
+.mediaQuerie__apropos,
+.columnGauche__section--portrait {
+  flex-direction: column;
 }
 
 /* Taille des flexbox */
-#columnGauche, .columnDroite__bloc--date, .columnDroite__bloc--card{
-    flex: 1;
+#columnGauche,
+.columnDroite__bloc--date,
+.columnDroite__bloc--card {
+  flex: 1;
 }
-#columnDroite, .columnDroite__bloc--description, .mediaQuerie__apropos{
-    flex: 2;
+#columnDroite,
+.columnDroite__bloc--description,
+.mediaQuerie__apropos {
+  flex: 2;
 }
 
 /* Espacement de Flexbox */
-.mediaQuerie__apropos{
-    justify-content: space-between;
+.mediaQuerie__apropos {
+  justify-content: space-between;
 }
 
 /* Cacher le titre général contact (affichage dans la media querie */
-.mediaQuerie__portrait__titre > h2{
-    display: none;
+.mediaQuerie__portrait__titre > h2 {
+  display: none;
 }
 
 /** Alignements **/
 
 /* Centrer le bloc */
-#pageContainer{
-    margin: auto;
+#pageContainer {
+  margin: auto;
 }
 
 /* Aligner le texte au centre */
-.columnGauche__section--titre, #loisirs, #langues{
-    text-align: center; 
+.columnGauche__section--titre,
+#loisirs,
+#langues {
+  text-align: center;
 }
 
 /* Font */
-body{
-    font-family: 'Work Sans', sans-serif, Arial;
+body {
+  font-family: "Work Sans", sans-serif, Arial;
 }
 
 /* Couleurs des fonts / icons */
 
-.columnGauche__section--titre, .columnDroite__titre--prenom, .columnDroite__container i {
-    color: #B0BEC5;
+.columnGauche__section--titre,
+.columnDroite__titre--prenom,
+.columnDroite__container i {
+  color: #b0bec5;
 }
-#loisirs p, .columnDroite__titre--description, .columnDroite__bloc--corps{
-    color: #37474F;
+#loisirs p,
+.columnDroite__titre--description,
+.columnDroite__bloc--corps {
+  color: #37474f;
 }
 
 /* Couleur des links et soulignement au passage de la souris */
-a:link{
-    color: #0D47A1;
-    text-decoration: none;
-    /* Transition légère pour souligner le text */
-    border-bottom: solid 1px transparent;
-    transition-duration: 0.5s;
-    transition-property: border-bottom;
+a:link {
+  color: #0d47a1;
+  text-decoration: none;
+  /* Transition légère pour souligner le text */
+  border-bottom: solid 1px transparent;
+  transition-duration: 0.5s;
+  transition-property: border-bottom;
 }
-a:hover{
-    border-bottom: solid 1px #0D47A1;
+a:hover {
+  border-bottom: solid 1px #0d47a1;
 }
 
 /* Couleurs des background */
-#columnGauche{
-    background-color: #B0BEC5;   
+#columnGauche {
+  background-color: #b0bec5;
 }
 
 /* Couleur du soulignement du titre */
-.columnDroite__titre--description u{
-    text-decoration-color: #B0BEC5;
-    text-underline-position: under;
+.columnDroite__titre--description u {
+  text-decoration-color: #b0bec5;
+  text-underline-position: under;
 }
 
 /* Couleur des border de titre */
-.columnDroite__bloc--header{
-    border-bottom: solid 1px #B0BEC5;
+.columnDroite__bloc--header {
+  border-bottom: solid 1px #b0bec5;
 }
 
 /* Mise en page */
-.columnGauche__section--portrait{  
-    padding-top: 70px;
-    padding-bottom: 30px;
+.columnGauche__section--portrait {
+  padding-top: 70px;
+  padding-bottom: 30px;
 }
-.columnGauche__section--corps{
-    padding-left: 10%;
-    padding-right:10%;
+.columnGauche__section--corps {
+  padding-left: 10%;
+  padding-right: 10%;
 }
-#loisirs i{
-    margin-left: 10px;
-    margin-right: 10px;
+#loisirs i {
+  margin-left: 10px;
+  margin-right: 10px;
 }
-#columnDroite{
-    padding-left: 5%;
-    padding-right:5%;
+#columnDroite {
+  padding-left: 5%;
+  padding-right: 5%;
 }
-.columnDroite__titre{
-    margin-top: 50px;
-    margin-bottom: 50px;
+.columnDroite__titre {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-h3{
-    margin-bottom: -10px;
+h3 {
+  margin-bottom: -10px;
 }
-.columnDroite__bloc--date ul{
-    margin-left: 20px;  
+.columnDroite__bloc--date ul {
+  margin-left: 20px;
 }
-.columnDroite__bloc--card{
-    margin-bottom: 30px;
+.columnDroite__bloc--card {
+  margin-bottom: 30px;
 }
-.columnDroite__bloc--card ul{
-    padding-left: 0;
+.columnDroite__bloc--card ul {
+  padding-left: 0;
 }
 
 /* Mise en page des fonts / icons */
 
-.columnDroite__titre--prenom{
-    font-weight: normal;
+.columnDroite__titre--prenom {
+  font-weight: normal;
 }
-.fa-circle{
-    font-size: 6px;
+.fa-circle {
+  font-size: 6px;
 }
-h1{
-    font-size: 60px;
-    margin-bottom: 10px; 
-    letter-spacing: -2px;
+h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+  letter-spacing: -2px;
 }
-h1, h2, h3{
-    font-weight: 500; 
-    text-transform: uppercase;
+h1,
+h2,
+h3 {
+  font-weight: 500;
+  text-transform: uppercase;
 }
-h3 span, h2 span{
-    text-transform: none;
+h3 span,
+h2 span {
+  text-transform: none;
 }
-.columnDroite__titre--nom, h3 span, h2 span{
-    font-weight:200;
+.columnDroite__titre--nom,
+h3 span,
+h2 span {
+  font-weight: 200;
 }
 
 /* Mise en page de la photo */
-#portrait{
-    max-width: 200px;
-    border-radius: 50%;
-    border: solid 4px rgba(0, 0, 0, 0.5);
+#portrait {
+  max-width: 200px;
+  border-radius: 50%;
+  border: solid 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Mise en page des titres de la colonne gauche */
-.columnGauche__section--titre{
-    background-color: #37474F;
-    padding-top: 5px;
-    padding-bottom: 5px;
+.columnGauche__section--titre {
+  background-color: #37474f;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /* Enlever les puces des listes */
-.columnGauche__section--corps li, .columnDroite__bloc--card ul{
-    list-style-type: none;
+.columnGauche__section--corps li,
+.columnDroite__bloc--card ul {
+  list-style-type: none;
 }
 
 /* Espacement entre les li de contact */
 
-.columnGauche__section--corps li{
-    margin-bottom: 15px;
+.columnGauche__section--corps li {
+  margin-bottom: 15px;
 }
 /* Le texte s'étire pour prendre toute la place dans la colonne */
-#apropos{
-    text-align: justify;
+#apropos {
+  text-align: justify;
 }
 /** Ajout d'un effet de fondu sur le portrait **/
-.columnGauche__section--portrait{
-    align-items: center;
-    height: 200px;
+.columnGauche__section--portrait {
+  align-items: center;
+  height: 200px;
 }
-.columnGauche__section--portrait img{
-    position: absolute;
+.columnGauche__section--portrait img {
+  position: absolute;
 }
-#portrait{
-    z-index: 2;
-    transition: opacity 1s ease-in-out;
+#portrait {
+  z-index: 2;
+  transition: opacity 1s ease-in-out;
 }
-#portrait:hover{
-    opacity: 0;
+#portrait:hover {
+  opacity: 0;
 }
-#cssvalidator{
-    z-index: 1;
-    top: 160px;
+#cssvalidator {
+  z-index: 1;
+  top: 160px;
 }
-
-
 
 /** Media Queries **/
- @media (min-width: 500px) and (max-width: 900px){
+@media (min-width: 500px) and (max-width: 900px) {
+  /** Column Gauche **/
 
-    /** Column Gauche **/
+  /* Afficher le titre général contact */
+  .mediaQuerie__portrait__titre h2 {
+    display: block;
+    margin-bottom: 0;
+  }
 
-    /* Afficher le titre général contact */
-    .mediaQuerie__portrait__titre h2{
-        display: block;
-        margin-bottom: 0;
-    }
+  /* Cacher le titre de la div contact */
+  #contact .columnGauche__section--titre {
+    display: none;
+  }
+  #pageContainer,
+  .columnGauche__section--portrait {
+    flex-direction: column;
+  }
+  .mediaQuerie__portrait,
+  .mediaQuerie__apropos,
+  .columnGauche__section--portrait {
+    display: flex;
+  }
+  .mediaQuerie__portrait,
+  .mediaQuerie__apropos {
+    flex-direction: row;
+  }
+  .columnGauche__section--portrait,
+  #loisirs,
+  #contact {
+    flex: 1;
+  }
+  #apropos {
+    flex: 2;
+  }
+  #loisirs,
+  #apropos {
+    border: solid 1px #37474f;
+  }
+  .columnGauche__section--portrait {
+    padding: 0;
+    margin: 0;
+  }
+  .columnGauche__section--titre {
+    margin-top: 0;
+  }
+  .columnGauche__section--portrait img {
+    margin-top: 20px;
+  }
+  #cssvalidator {
+    top: 130px;
+  }
 
-    /* Cacher le titre de la div contact */
-    #contact .columnGauche__section--titre{
-        display: none;
-    }
-    #pageContainer, .columnGauche__section--portrait{
-        flex-direction: column;
-    }
-    .mediaQuerie__portrait, .mediaQuerie__apropos, .columnGauche__section--portrait{
-        display: flex;
-    }
-    .mediaQuerie__portrait, .mediaQuerie__apropos{
-        flex-direction: row;
-    }
-    .columnGauche__section--portrait, #loisirs, #contact{
-        flex: 1;   
-    }
-    #apropos{
-        flex: 2;
-    }
-    #loisirs, #apropos{
-        border: solid 1px #37474F;
-    }
-    .columnGauche__section--portrait{
-        padding: 0;
-        margin:0;
-    }
-    .columnGauche__section--titre{
-        margin-top: 0;
-    }
-    .columnGauche__section--portrait img{
-        margin-top: 20px;
-    }
-    #cssvalidator{
-        top:130px
-    }
-
-    /** Column Droite **/
-    .columnDroite__titre{
-        text-align: center;
-    }
+  /** Column Droite **/
+  .columnDroite__titre {
+    text-align: center;
+  }
+}
+/* Ajout d'un cerclage autour des icons */
+#loisirs i {
+  padding: 10px 10px 10px 10px;
+  border: #37474f solid 2px;
+  border-radius: 50px;
+}
+.fa-wine-glass-alt:before {
+  padding: 20px 10px 20px 10px;
 }
