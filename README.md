@@ -29,12 +29,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/StephaneChimy/Projet-2">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
   <h3 align="center">Projet-2</h3>
-
   <p align="center">
     Transformer une maquette en site web.
     <br />
@@ -87,15 +82,15 @@ Project Link: [https://github.com/StephaneChimy/Projet-2](https://github.com/Ste
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/StephaneChimy/repo.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/StephaneChimy/Projet-2.svg?style=for-the-badge
 [contributors-url]: https://github.com/StephaneChimy/Projet-2/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/StephaneChimy/repo.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/StephaneChimy/Projet-2.svg?style=for-the-badge
 [forks-url]: https://github.com/StephaneChimy/Projet-2/network/members
-[stars-shield]: https://img.shields.io/github/stars/StephaneChimy/repo.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/StephaneChimy/Projet-2.svg?style=for-the-badge
 [stars-url]: https://github.com/StephaneChimy/Projet-2/stargazers
-[issues-shield]: https://img.shields.io/github/issues/StephaneChimy/repo.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/StephaneChimy/Projet-2.svg?style=for-the-badge
 [issues-url]: https://github.com/StephaneChimy/Projet-2/issues
-[license-shield]: https://img.shields.io/github/license/StephaneChimy/repo.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/StephaneChimy/Projet-2.svg?style=for-the-badge
 [license-url]: https://github.com/StephaneChimy/Projet-2/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/StephaneChimy
+[linkedin-url]: https://linkedin.com/in/Stephane-Chimy
