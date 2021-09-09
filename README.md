@@ -35,31 +35,72 @@
   </p>
 </p>
 
-## 📝 Table of Contents
-- [About](#about)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [Authors](#authors)
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>📝 Table of Contents</summary>
+  <ol>
+    <li>
+    <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#objectives">Objectives</a></li>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+   <!-- <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul> -->
+        <!-- <li><a href="#prerequisites">Prerequisites</a></li> -->
+        <!-- <li><a href="#installation">Installation</a></li> -->
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li> 
+    <li><a href="#roadmap">Roadmap</a></li>
+   <!-- <li><a href="#contributing">Contributing</a></li> -->
+   <!-- <li><a href="#license">License</a></li> -->
+   <!-- <li><a href="#contact">Contact</a></li> -->
+   <!-- <li><a href="#acknowledgements">Acknowledgements</a></li> -->
+  </ol>
+</details>
 
-## 🧐 About <a name = "about"></a>
+## 🧐 About <a name = "about-the-project"></a>
 Suite à une maquette envoyée, le but est de la transformer en site internet accessible et responsive en gardant les grandes lignes d'architecture, tout en personnalisant les couleurs et logos.
 
 [![Projet-2][product-screenshot]](https://github.com/StephaneChimy/Projet-2/blob/6f79b7ea9fab58f88d7e0d7673e10a3fcc4fefc2/images/Responsive.png)
+
+
+### 🎯 Objectives <a name = "objectives"></a>
+
+* Mettre en œuvre des effets CSS graphiques avancés
+* Assurer la cohérence graphique d'un site web 
+* Mettre en place une structure de navigation pour un site web
+
+
+
+### ⛏️ Built With <a name = "built-with"></a>
+
+-Frontend
+
+- [HTML5](https://www.mongodb.com/) 
+- [CSS3](https://expressjs.com/) 
+
 
 ## 🎈 Usage <a name="usage"></a>
 Aller simplement sur [la page de démonstration](https://stephanechimy.github.io/Projet-2/) pour voir le résultat.
 
 
-## ⛏️ Built Using <a name = "built_using"></a>
-- [HTML5](https://www.mongodb.com/) 
-- [CSS3](https://expressjs.com/) 
+<!-- ROADMAP -->
+## 🗺 Roadmap <a name = "roadmap"></a>
+
+See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
+
+
 
 ## ✍️ Authors <a name = "authors"></a>
 - [@stephanechimy](https://github.com/StephaneChimy) - Initial work
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/StephaneChimy/Projet-2.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/StephaneChimy/Projet-2.svg?style=for-the-badge&color=success
 [contributors-url]: https://github.com/StephaneChimy/Projet-2/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/StephaneChimy/Projet-2.svg?style=for-the-badge
 [forks-url]: https://github.com/StephaneChimy/Projet-2/network/members
